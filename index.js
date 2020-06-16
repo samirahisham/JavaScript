@@ -1,9 +1,8 @@
 //introduction
 
-// let x;
+// let x = 2;
+// let x = 4;
 // console.log(x);
-// x=4;
-
 // console.log(x);
 // x=12.896485;
 // console.log(x);
@@ -11,7 +10,7 @@
 // x="hello";
 // console.log(x);
 
-// const y;
+// const y=10;
 // console.log(y);
 // y=7;
 // console.log(y);
@@ -62,7 +61,7 @@
 
 //conditional statements
 
-// let grade =85;
+// let grade =55;
 // let evaluation;
 
 // if (grade > 85) 
@@ -91,14 +90,14 @@
 //loops
 
 
-// for (let counter = 1; counter < 5; counter++) {
+// for (let counter = 0; counter < 5; counter++) {
 //    console.log('Inside the loop:' , counter);
 //  }
 
 // let count = 0;
 // while (count < 10) {
-// console.log("count",count); 
 // count +=2;
+// console.log("count",count); 
 // }
 
 /***************************************************************************/
@@ -106,26 +105,32 @@
 
 //string functions
 
-// let str1 = "Hello "
+// let str1 = "Hello"
 // let str2 = "There!"
 // let str3;
 // str3 = str1.concat(str2)
 // console.log(str3)
+// console.log(str1)
+// console.log(str2)
+
+
 // str3 = str1.toLowerCase()
 // console.log(str3)
 // str3 = str1.toUpperCase()
 // console.log(str3)
 
-// let x= 5
+// let x= 5.256
 // console.log(typeof(x));
 // let y=x.toString()
 // console.log(typeof(x));
 // console.log(typeof(y));
+// console.log((y));
 
-// str1.replace("ll","vv")
-// console.log(str1)
-// str1.slice(1, 3)
-// console.log(str1)
+
+// str3 = str1.replace("ll","vv")
+// console.log(str3)
+// str3 = str1.slice(1, 3)
+// console.log(str3)
 
 // let sentence = "hello there everyone , how have you been ?"
 // let words = sentence.split(",")
@@ -143,6 +148,12 @@
 //   }
 //  multiplication(5,7)
 
+// const multiplicationArrow =(p1,p2)=>{
+//   return p1*p2
+// }
+// let output = multiplicationArrow(2,3);
+// console.log(output)
+
 
 // const addition =(a,b)=>{
 // return a+b
@@ -154,14 +165,11 @@
 
 //arrays
 // let array_original = ['Apple',1.257, 15,"Banana",2] 
+// console.log("array original",array_original)
 // console.log(array_original)
 
-//reverse
-// array_original.reverse()
-// console.log("array",array_original)
-
-//pop
-// let poped=array_original.pop()
+// //pop
+// let poped = array_original.pop()
 // console.log("array",array_original)
 // console.log("poped",poped)
 
@@ -172,18 +180,30 @@
 
 
 //concat
-// let concated = array_original.concat("hey")
+// let concated = array_original.concat(12)
 // console.log("array",array_original)
 // console.log("concated",concated)
 
 //filter
+
+// let string_array= array_original.filter((element)=>{ return typeof(element)=="string"})
+// console.log(string_array)
+// console.log("original array",array_original)
+
+
+
 // let array_numbers = array_original.filter((element)=>{return element>=2})
 // console.log(array_numbers)
 
 // let string_array = array_original.filter((element)=>{return typeof(element)=="string"})
 // console.log(string_array)
 
-//map
+// map
+// let array_plus_five =array_numbers.map((number)=>{ return number+5})
+// console.log("plus five",array_plus_five)
+// console.log("numbers",array_numbers)
+
+
 // let array2 = array_numbers.map((element)=>{return element*2})
 // console.log(array2)
 
